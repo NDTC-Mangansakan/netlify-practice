@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '/Images/destination-img-1.png'
-import img2 from '/Images/destination-img-2.png'
-import img3 from '/Images/destination-img-3.png'
+import img1 from './assets/Images/destination-img-1.png'
+import img2 from './assets/Images/destination-img-2.png'
+import img3 from './assets/Images/destination-img-3.png'
 
 const App = () => {
   return (
