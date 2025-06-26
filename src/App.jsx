@@ -1,17 +1,19 @@
 import React from 'react'
-import img1 from '../public/Images/destination-img-1.png'
-import img2 from '../public/Images/destination-img-2.png'
-import img3 from '../public/Images/destination-img-3.png'
+import img1 from '/Images/destination-img-1.png'
+import img2 from '/Images/destination-img-2.png'
+import img3 from '/Images/destination-img-3.png'
 
 const App = () => {
   return (
     <div style={{
+      border:'1px solid',
+      width: '100%',
       display: 'grid',
-      gridTemplateColumns: '200px 300px 200px'
+      gridTemplateColumns: 'repeat(3, 1fr)'
     }}>
-      <img src={img1} alt="" />
-      <img src={img2} alt="" />
-      <img src={img3} alt="" />
+      <img src={img1} alt="" style={{ width: '100%',  objectFit: 'cover' }} />
+      <img src={img2} alt="" style={{ width: '100%',  objectFit: 'cover' }} />
+      <img src={img3} alt="" style={{ width: '100%',  objectFit: 'cover' }} />
     </div>
   )
 }
